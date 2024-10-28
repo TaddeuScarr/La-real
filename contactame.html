@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactame</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="CSS/contactame.css">
+
+</head>
+<body>
+    <header>
+        <a href="index.html" class="video-logo">
+            <video src="IMAGENES/LOGO.mp4" autoplay loop muted playsinline>
+            </video>
+        </a>
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        
+    </header>
+        <nav class="nav" id="nav">
+
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            
+            <ul class="nav-list">
+                <li>
+                    <a href="#temas-lsp" class="nav-principal">Temas</a>
+                </li>
+
+                <li>
+                    <a href="index.html" class="nav-principal">Inicio</a>
+                </li>
+                <li>
+                    <a href="libros.html" class="nav-principal">Libros</a>
+                </li>
+                <li>
+                    <a href="jueguitos.html" class="nav-principal">Jueguitos</a>
+                </li>
+                <li>
+                    <a href="animes.html" class="nav-principal">Animes</a>
+                </li>
+                
+                
+            </ul>
+        </nav>
+    <div class="container">
+        <h1>Contactame</h1>
+        <p>Si quiere contactar conmigo para hablar de algo que le haya dado curiosidad... escribame </p>
+        <form action="https://formsubmit.co/tadeoscardilli@gmail.com" method="POST">
+            <div class="grupo">
+                <div class="linea">
+                    <div class="entrada">
+                        <input type="text" name="nombre" class="form-control" placeholder=" Como le gusta que le llamen?" required>
+                    </div>
+                    <div class="entrada">
+                        <input type="email" name="email" class="form-control" placeholder=" Cual es su dominio de contacto en ARPANET (email)" required>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo">
+                <textarea placeholder="Escribe la recomendacion que usted quiera" class="form-control" name="mensaje" rows="10" required></textarea>
+            </div>
+            <div class="boton">
+                <button type="submit" class="enviar">Enviar comentario </button>
+            </div>
+        </form>
+        <script src="hamburguesa.js"></script>
+    </body>
+</html>
