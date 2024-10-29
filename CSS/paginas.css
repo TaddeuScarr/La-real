@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: monospace; 
+    font-family: sans-serif; 
     background-color: #0d0d0d; 
     color: #00ff00; 
 }
@@ -158,4 +158,76 @@ header {
     .estrellas {
         margin-left: 35%;
     }
+}
+.entrada-elemento {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); 
+}
+
+.elemento {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border: 1px solid #00ff00;
+}
+
+.datos {
+    width: 60%; /* Ajusta el ancho para permitir espacio para la caja de comentarios */
+}
+
+.comentarios {
+    width: 35%; /* Ajusta el ancho de la caja de comentarios */
+    background-color: #1a1a1a;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+}
+
+.comentarios h3 {
+    color: #00ff00;
+}
+
+.lista-comentarios {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #00ff99;
+}
+
+.lista-comentarios li {
+    border-bottom: 1px solid #00ff00;
+    padding: 5px 0;
+}
+
+.comentario-apodo, .comentario-texto {
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #b3ffb3;
+    border: 1px solid #00ff00;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comentario-boton {
+    background-color: #66ff66;
+    color: #0d0d0d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comentario-boton:hover {
+    background-color: #33cc33;
 }
