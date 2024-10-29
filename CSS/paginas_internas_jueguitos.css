@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif; 
+    background-color: #0d0d0d; 
+    color: #00ff00; 
+}
+
+body.menu-abierto {
+    overflow: hidden;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    min-height: 80px;
+    background-color: #1a1a1a; 
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.video-logo video {
+    height: 80px;
+    width: auto;
+     
+}
+
+.video-container VIDEO {
+    height: 60px; 
+    width: auto;
+    overflow: hidden; 
+}
+
+.abrir-menu, .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 2rem;
+    background-color: transparent;
+}
+
+.abrir-menu {
+    color: #00ff00;
+}
+
+.cerrar-menu {
+    color: #00ff00;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #121212;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 255, 0, 0.1); 
+}
+
+.nav.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: end;
+}
+
+.nav-list li a {
+    color: #00ff00; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.entrada-elemento {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); 
+}
+
+.elemento {
+    margin-top: 20px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    border: 1px solid #00ff00;
+}
+
+.elemento li {
+    list-style-type: none;
+}
+
+.img_elementos img {
+    height: 250px;
+}
+
+.datos {
+    padding-left: 20px;
+    color: #00ff00;
+}
+
+.datos p {
+    color: #00ff00;
+}
+
+.estrellas {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.nav-list li a:hover, .datos p:hover {
+    color: #00ff99;
+    transition: color 0.3s ease;
+}
+
+@media (max-width: 450px) {
+    .busqueda {
+        width: 15vh;
+        margin-left: 20px;
+    }
+    .elemento {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    .img_elementos img {
+        width: 50%;
+        height: auto;
+    }
+    .datos {
+        padding-left: 0;
+        width: 100%;
+    }
+    .estrellas {
+        margin-left: 35%;
+    }
+}
+.entrada-elemento {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5); 
+}
+
+.elemento {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    gap: 20px;
+    background-color: #1a1a1a;
+    padding: 1rem;
+    border: 1px solid #00ff00;
+}
+
+.datos {
+    width: 60%; /* Ajusta el ancho para permitir espacio para la caja de comentarios */
+}
+
+.comentarios {
+    width: 35%; /* Ajusta el ancho de la caja de comentarios */
+    background-color: #1a1a1a;
+    padding: 10px;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+}
+
+.comentarios h3 {
+    color: #00ff00;
+}
+
+.lista-comentarios {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    color: #00ff99;
+}
+
+.lista-comentarios li {
+    border-bottom: 1px solid #00ff00;
+    padding: 5px 0;
+}
+
+.comentario-apodo, .comentario-texto {
+    width: 100%;
+    background-color: #1f1f1f;
+    color: #b3ffb3;
+    border: 1px solid #00ff00;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.comentario-boton {
+    background-color: #66ff66;
+    color: #0d0d0d;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comentario-boton:hover {
+    background-color: #33cc33;
+}
