@@ -200,29 +200,42 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width: 660px) {
-    .contenedor {
+@media (max-width:660px){
+    
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contenedor{
         flex-direction: column;
-        height: 580px;
+        width: 100%;
+        height: auto; /* Cambia la altura a auto para adaptarse al contenido */
+        align-items: center; /* Centra el contenido */
     }
 
-    .text-contenedor {
+    .text-contenedor{
         width: 90%;
+        max-width: 600px; /* Define un ancho máximo para mejorar la lectura en pantallas grandes */
     }
 
-    .temas {
+    .temas{
         margin-top: 240px;
     }
 
-    .columnas-temas {
+    .columnas-temas{
         flex-direction: column;
+        align-items: center; /* Centra los elementos de la columna */
     }
 
-    .libros, .jueguitos, .animes {
-        width: 75%;
+    .libros, .jueguitos, .animes{
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        max-width: 500px; /* Define un ancho máximo para mejor estética */
+        margin: 10px 0; /* Agrega margen entre secciones */
     }
 
-    footer {
+    footer{
         margin-top: 300px;
     }
 }
