@@ -131,3 +131,8 @@ p {
 .boton {
     text-align: center;
 }
+
+.enviar.clickeado {
+    background-color: #33cc33; /* Cambia a un color diferente */
+    color: #ffffff; /* Cambia el color del texto */
+}
