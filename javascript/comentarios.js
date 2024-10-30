@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const botonesEnviar = document.querySelectorAll(".comentario-boton");
 
-    // Cargar comentarios guardados al iniciar la página
+    
     cargarComentarios();
 
     botonesEnviar.forEach((boton) => {
@@ -9,15 +9,15 @@ document.addEventListener("DOMContentLoaded", function() {
             const apodoInput = this.parentNode.querySelector(".comentario-apodo");
             const comentarioTexto = this.parentNode.querySelector(".comentario-texto");
             const listaComentarios = this.parentNode.querySelector(".lista-comentarios");
-            const gameId = this.parentNode.getAttribute("data-id"); // Identificador único para cada juego
+            const gameId = this.parentNode.getAttribute("data-id"); 
 
             if (apodoInput.value.trim() !== "" && comentarioTexto.value.trim() !== "") {
-                // Obtener la fecha y hora actual
+                
                 const fecha = new Date();
                 const fechaFormato = fecha.toLocaleDateString();
                 const horaFormato = fecha.toLocaleTimeString();
 
-                // Crear un nuevo objeto de comentario
+              
                 const nuevoComentario = {
                     apodo: apodoInput.value,
                     texto: comentarioTexto.value,
@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function() {
                     hora: horaFormato
                 };
 
-                // Guardar el comentario en el Local Storage usando el gameId
+                
                 guardarComentarioLocal(nuevoComentario, gameId);
 
-                // Mostrar el comentario en la interfaz
+               
                 mostrarComentario(nuevoComentario, listaComentarios);
 
-                // Limpiar los campos de entrada
+                
                 apodoInput.value = "";
                 comentarioTexto.value = "";
             }
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     function cargarComentarios() {
         document.querySelectorAll(".comentarios").forEach((comentariosDiv) => {
             const listaComentarios = comentariosDiv.querySelector(".lista-comentarios");
-            const gameId = comentariosDiv.getAttribute("data-id"); // Identificador único para cada juego
+            const gameId = comentariosDiv.getAttribute("data-id"); 
             const comentariosGuardados = JSON.parse(localStorage.getItem(gameId)) || [];
             
             comentariosGuardados.forEach((comentario) => {

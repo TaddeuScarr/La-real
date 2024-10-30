@@ -174,7 +174,7 @@ header {
 
 .elemento {
     display: flex;
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    align-items: flex-start; 
     gap: 20px;
     background-color: #1a1a1a;
     padding: 1rem;
@@ -182,11 +182,11 @@ header {
 }
 
 .datos {
-    width: 60%; /* Ajusta el ancho para permitir espacio para la caja de comentarios */
+    width: 60%; 
 }
 
 .comentarios {
-    width: 35%; /* Ajusta el ancho de la caja de comentarios */
+    width: 35%;
     background-color: #1a1a1a;
     padding: 10px;
     border: 1px solid #00ff00;

@@ -3,12 +3,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const botonEnviar = document.querySelector(".enviar");
 
     form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Evita el envío inmediato del formulario
-        botonEnviar.classList.add("clickeado"); // Aplica el cambio de color
+        event.preventDefault(); 
+        botonEnviar.classList.add("clickeado"); 
 
-        // Retrasa el envío del formulario para que el cambio de color sea visible
+        
         setTimeout(function() {
-            form.submit(); // Envía el formulario después de mostrar el cambio
-        }, 500); // Ajusta el tiempo si necesitas más o menos tiempo
+            form.submit(); 
+        }, 500);
     });
 });

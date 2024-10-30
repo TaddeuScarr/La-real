@@ -211,13 +211,13 @@ footer {
     .contenedor{
         flex-direction: column;
         width: 100%;
-        height: auto; /* Cambia la altura a auto para adaptarse al contenido */
-        align-items: center; /* Centra el contenido */
+        height: auto; 
+        align-items: center; 
     }
 
     .text-contenedor{
         width: 90%;
-        max-width: 600px; /* Define un ancho máximo para mejorar la lectura en pantallas grandes */
+        max-width: 600px; 
     }
 
     .temas{
@@ -226,13 +226,13 @@ footer {
 
     .columnas-temas{
         flex-direction: column;
-        align-items: center; /* Centra los elementos de la columna */
+        align-items: center; 
     }
 
     .libros, .jueguitos, .animes{
-        width: 90%; /* Ajusta el ancho al 90% del contenedor */
-        max-width: 500px; /* Define un ancho máximo para mejor estética */
-        margin: 10px 0; /* Agrega margen entre secciones */
+        width: 90%; 
+        max-width: 500px; 
+        margin: 10px 0; 
     }
 
     footer{
