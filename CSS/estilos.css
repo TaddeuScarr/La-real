@@ -200,47 +200,74 @@ footer {
     margin-top: 40px;
 }
 
-@media (max-width:660px){
-    
-    body{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
-    .contenedor{
-        flex-direction: column;
-        width: 100%;
-        height: auto; 
-        align-items: center; 
-    }
-
-    .text-contenedor{
-        width: 90%;
-        max-width: 600px; 
-    }
-
-    .temas{
-        margin-top: 240px;
-    }
-
-    .columnas-temas{
-        flex-direction: column;
-        align-items: center; 
-    }
-
-    .libros, .jueguitos, .animes{
-        width: 90%; 
-        max-width: 500px; 
-        margin: 10px 0; 
-    }
-
-    footer{
-        margin-top: 300px;
-    }
-}
 
 .footer-image img{
     max-width: 20;
 
+}
+
+@media (max-width: 660px) {
+    header {
+        padding: 10px;
+        min-height: 60px;
+    }
+
+    .video-logo video {
+        height: 50px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .imagen-contenedor, .text-contenedor {
+        width: 90%;
+        max-width: 500px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .temas {
+        padding: 20px;
+    }
+
+    .columnas-temas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .libros, .jueguitos, .animes {
+        width: 90%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: smaller;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .psycho-image {
+        height: 50vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .psycho-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .psycho-text a {
+        font-size: 1rem;
+        padding: 5px 10px;
+    }
 }

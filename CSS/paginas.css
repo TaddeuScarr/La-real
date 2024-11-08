@@ -137,28 +137,7 @@ header {
     transition: color 0.3s ease;
 }
 
-@media (max-width: 450px) {
-    .busqueda {
-        width: 15vh;
-        margin-left: 20px;
-    }
-    .elemento {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: center;
-    }
-    .img_elementos img {
-        width: 50%;
-        height: auto;
-    }
-    .datos {
-        padding-left: 0;
-        width: 100%;
-    }
-    .estrellas {
-        margin-left: 35%;
-    }
-}
+
 .entrada-elemento {
     margin-left: 5%;
     margin-right: 5%;
@@ -230,4 +209,54 @@ header {
 
 .comentario-boton:hover {
     background-color: #33cc33;
+}
+
+@media (max-width: 450px) {
+    .header, .nav {
+        padding: 10px;
+    }
+
+    .video-logo video {
+        height: 50px;
+        width: 100%;
+    }
+
+    .elemento {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .img_elementos img {
+        width: 80%;
+        height: auto;
+        margin: auto;
+    }
+
+    .datos {
+        padding-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .estrellas {
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    .comentarios {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .comentario-apodo, .comentario-texto {
+        width: 90%;
+        margin: auto;
+    }
+
+    .entrada-elemento {
+        margin: 5%;
+        padding: 15px;
+    }
 }
