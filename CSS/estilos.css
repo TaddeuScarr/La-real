@@ -205,57 +205,30 @@ footer {
     max-width: 20;
 
 }
-
 @media (max-width: 660px) {
-    header {
-        padding: 10px;
-        min-height: 60px;
-    }
-
-    .video-logo video {
-        height: 50px;
-    }
-
+    /* Centrado de la lista de navegación en el menú lateral */
     .nav-list {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0.5rem;
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
     }
 
-    .contenedor {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
-
-    .imagen-contenedor, .text-contenedor {
-        width: 90%;
-        max-width: 500px;
-        padding: 10px;
+    .nav-list li {
+        width: 100%;
         text-align: center;
     }
 
-    .temas {
-        padding: 20px;
+    .nav-list li a {
+        font-size: 1.2rem;
+        color: #00ff00;
+        text-decoration: none;
+        font-weight: bold;
     }
 
-    .columnas-temas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .libros, .jueguitos, .animes {
-        width: 90%;
-        max-width: 400px;
-        margin: 10px 0;
-    }
-
-    footer {
-        font-size: smaller;
-        padding: 10px;
-        margin-top: 20px;
-    }
-
+    /* Ajustes de la imagen de fondo y el texto principal */
     .psycho-image {
         height: 50vh;
         background-size: cover;
@@ -269,5 +242,44 @@ footer {
     .psycho-text a {
         font-size: 1rem;
         padding: 5px 10px;
+    }
+
+    /* Ajustes de la sección principal y del contenido */
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        height: auto;
+    }
+
+    .imagen-contenedor, .text-contenedor {
+        width: 90%;
+        max-width: 500px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .temas {
+        padding: 20px;
+        height: auto;
+    }
+
+    .columnas-temas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .libros, .jueguitos, .animes {
+        width: 90%;
+        max-width: 400px;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    /* Ajustes del footer */
+    footer {
+        font-size: smaller;
+        padding: 10px;
+        margin-top: 20px;
     }
 }
