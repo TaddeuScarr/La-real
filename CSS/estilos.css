@@ -57,7 +57,7 @@ header {
     right: 0;
     background-color: #121212;
     padding: 2rem;
-    box-shadow: 0 0 0 100vmax rgba(0, 255, 0, 0.1); 
+    box-shadow: 0 0 0 100vmax rgba(0, 255, 0, 0.1);
 }
 
 .nav.visible {
@@ -68,16 +68,24 @@ header {
 .nav-list {
     list-style-type: none;
     display: flex;
-    gap: 1rem;
     flex-direction: column;
+    gap: 1rem;
     align-items: end;
+    font-family: sans-serif; /* Asegura que se use la misma tipografía */
+    font-size: 1.2rem; /* Ajusta el tamaño de la fuente */
 }
 
 .nav-list li a {
-    color: #00ff00; 
+    color: #00ff00;
     text-decoration: none;
     font-weight: 600;
 }
+
+.nav-list li a:hover {
+    color: #00ff99;
+    transition: color 0.3s ease;
+}
+
 
 
 .psycho-image {
