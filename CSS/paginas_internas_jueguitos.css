@@ -114,7 +114,9 @@ header {
 }
 
 .img_elementos img {
-    height: 250px;
+    width: 100%;  
+    height: auto; 
+    object-fit: cover;
 }
 
 .datos {
@@ -205,7 +207,7 @@ header {
     background-color: #33cc33;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 601px) {
     .header, .nav {
         padding: 10px;
     }
@@ -249,5 +251,16 @@ header {
     .entrada-elemento {
         margin: 5%;
         padding: 15px;
+    }
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
     }
 }

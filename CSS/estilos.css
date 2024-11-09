@@ -235,7 +235,7 @@ footer {
         height: 50vh;
         background-size: cover;
         background-position: center;
-    }
+    }   
 
     .psycho-text h1 {
         font-size: 1.5rem;
@@ -281,5 +281,17 @@ footer {
         font-size: smaller;
         padding: 10px;
         margin-top: 20px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: 18px;
     }
 }
