@@ -113,12 +113,20 @@ header {
     list-style-type: none;
 }
 
-.img_elementos img {
-    width: 100%;  
+.img_elementos {
+    width: 100%; 
+    max-width: 200px; 
     height: auto; 
-    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.img_elementos img {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
 .datos {
     padding-left: 20px;
     color: #00ff00;
@@ -184,6 +192,9 @@ header {
 .lista-comentarios li {
     border-bottom: 1px solid #00ff00;
     padding: 5px 0;
+    word-wrap: break-word; 
+    white-space: normal; 
+    overflow-wrap: break-word; 
 }
 
 .comentario-apodo, .comentario-texto {

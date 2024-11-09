@@ -157,22 +157,29 @@ header {
 }
 
 .columnas-temas {
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between; /* Asegura espacio uniforme entre los elementos */
+    align-items: stretch; /* Alinea los elementos en altura */
     margin-top: 0px;
+    gap: 20px; /* Espacio entre los elementos */
+     
 }
 
 .libros, .jueguitos, .animes {
-    width: 30%;
+    width: 30%; /* Ancho igual para cada sección */
+    min-height: 250px; /* Ajusta la altura mínima según sea necesario */
     padding: 40px;
     text-align: center;
     background-color: #1a1a1a;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 255, 0, 0.3);
-     
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+
 
 .columnas-temas p {
     color: #00ff00;
