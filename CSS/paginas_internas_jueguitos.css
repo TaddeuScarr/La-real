@@ -107,13 +107,13 @@ header {
 }
 
 .elemento {
-    margin-top: 20px;
-    background-color: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
     border: 1px solid #00ff00;
+    background-color: #1a1a1a;
+    gap: 20px;
 }
 
 .elemento li {
@@ -121,25 +121,27 @@ header {
 }
 
 .img_elementos {
-    width: 100%; 
-    max-width: 200px; 
-    height: auto; 
+    width: 200px; /* Aumenta el ancho del contenedor de imagen */
+    height: 250px; /* Aumenta la altura del contenedor de imagen */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1a1a1a;
+    border-radius: 5px;
 }
 
 .img_elementos img {
-    width: 100%; 
-    height: auto; 
-    object-fit: contain; 
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarse */
 }
 
-
 .datos {
+    flex: 1; /* El texto ocupa el espacio restante */
     padding-left: 20px;
     color: #00ff00;
 }
+
 
 .datos p {
     color: #00ff00;
