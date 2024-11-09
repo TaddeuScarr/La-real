@@ -126,11 +126,7 @@ header {
     color: #00ff00;
 }
 
-.estrellas {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-}
+
 
 .nav-list li a:hover, .datos p:hover {
     color: #00ff99;
@@ -240,10 +236,7 @@ header {
         text-align: center;
     }
 
-    .estrellas {
-        justify-content: center;
-        margin: 10px 0;
-    }
+  
 
     .comentarios {
         width: 100%;

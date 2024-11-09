@@ -76,7 +76,7 @@ header {
 .nav-list li a {
     color: #00ff00; 
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 
@@ -206,7 +206,6 @@ footer {
 
 }
 @media (max-width: 660px) {
-    /* Centrado de la lista de navegación en el menú lateral */
     .nav-list {
         display: flex;
         flex-direction: column;
@@ -227,8 +226,11 @@ footer {
         text-decoration: none;
         font-weight: bold;
     }
+    .video-logo video {
+        height: 50px;
+        width: 100%;
+    }
 
-    /* Ajustes de la imagen de fondo y el texto principal */
     .psycho-image {
         height: 50vh;
         background-size: cover;
@@ -244,7 +246,6 @@ footer {
         padding: 5px 10px;
     }
 
-    /* Ajustes de la sección principal y del contenido */
     .contenedor {
         flex-direction: column;
         align-items: center;
@@ -276,7 +277,6 @@ footer {
         padding: 20px;
     }
 
-    /* Ajustes del footer */
     footer {
         font-size: smaller;
         padding: 10px;
